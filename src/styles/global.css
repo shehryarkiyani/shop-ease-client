@@ -1,0 +1,18 @@
+@layer tailwind-base, primereact, tailwind-utilities;
+@layer tailwind-base {
+  @tailwind base;
+  @layer base {
+    body,
+    html {
+      font-family: "Inter", sans-serif !important;
+    }
+    body {
+      overflow-x: hidden !important;
+    }
+  }
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
