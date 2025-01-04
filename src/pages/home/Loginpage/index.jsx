@@ -1,11 +1,10 @@
 
-
-
 const Loginpage = () => {
   return (
     <div className="flex h-screen sticky font-[Manrope]">
-      <div className="left border flex flex-col gap-3   h-screen w-[600px] ">
+      <div className="left  flex flex-col gap-3   h-screen w-[600px] ">
         <div className="w-[143px] h-[30px] text-center font-[700] text-[24px] top-[22px]">
+       
           <h1>Dummy logo</h1>
         </div>
         <div className="= items-center w-80 flex flex-col">
@@ -18,47 +17,47 @@ const Loginpage = () => {
             </div>
         </div>
 
-        <div className="flex flex-col self-center h-[140px] justify-between  w-[417px]">
-          <button className=" text-center border h-[56px] w-[417px]">
-            login with google
+        <div className="flex flex-col self-center h-[140px] justify-between    w-[417px]">
+          <button className=" text-center border h-[46px] w-[417px]">
+          <i className="pi pi-google "></i>  login with google
           </button>
-          <button className="text-center border h-[56px] w-[417px]">
-            login with facebook
+          <button className="text-center border h-[46px]  w-[417px]">
+          <i className="pi pi-facebook"></i>  login with facebook
           </button>
         </div>
 
-        <div className="flex flex-col self-center justify-between h-[200px]  ">
-          <div>
+        <div className="flex flex-col self-center justify-between h-[200px]  p-3 ">
+          <div className="p-2">
             <h1>EMAIL ADDRESS</h1>
             <input
               placeholder="    Enter email"
-              className="border-[1.5px] outline-2 border-[#1111] w-[417px] h-[56px] "
+              className="border-[1.5px] outline-2 border-[#1111] w-[417px] h-[46px]  "
               type="text"
             />
           </div>
 
-          <div className="">
+          <div className="p-2">
             <h1 className="text-[#111111]">PASSWORD</h1>
             <input
               placeholder="    Password here"
-              className="border-[1.5px]  w-[417px] h-[56px] "
+              className="border-[1.5px]  w-[417px] h-[46px] "
               type="text"
             />
 
-            <h1 className="text-right font-[400] text-[#B4B4B4] w-[417px]">
+            <h1 className="text-right font-[400] text-[#B4B4B4] p-1 w-[417px]">
               forgot password?
             </h1>
           </div>
         </div>
         <div className="h-[90px] flex flex-col self-center justify-between">
-          <button className="border w-[417px] h-[64px] left-[41px] bg-black text-white">
+          <button className="border w-[350px] h-[54px] left-[41px] bg-black text-white">
             Login
           </button>
-          <button className="border w-[417px] h-[64px] left-[41px] bg-[#3C82D6] text-white">
+          <button className="border w-[350px] h-[54px] left-[41px] bg-[#3C82D6] text-white">
             Signup
           </button>
         </div>
-        <div className="text-[#656565FC] w-56  flex text-[15px] justify-around">
+        <div className="text-[#656565FC] w-56  border flex text-[15px] justify-around">
           <h1>Privacy Policy</h1>
           <h1> Help Center</h1>
           <h1>About</h1>
@@ -66,10 +65,10 @@ const Loginpage = () => {
       </div>
 
       <div className="right "> 
-      <div className="relative  w-full">
+      <div className="relative   w-full">
  
   <img
-    className="h-screen w-full object-contain"
+    className="h-[100vh] w-[680px] object-fill" 
     src="/assets/Group-680.png"
  
   />
@@ -79,7 +78,7 @@ const Loginpage = () => {
 
 
 
-  <div className="absolute top-[470px] right-36 text-center text-white">
+  <div className="absolute top-[470px] right-24 text-center text-white">
     <h1 className="text-2xl font-bold">Buy the best items on our site.</h1>
     <p className="mt-2 text-lg">
       We have the best items on our site. You can buy the best items on our site.
