@@ -1,19 +1,13 @@
-
 import { useNavigate } from "react-router-dom";
-import AuthLayout from "../../../core/Layout/authLayout";
 
-const Loginpage = () => {
-  const navigate =useNavigate();
-  
-  const Handlesignup=()=>{
+const Reuse = () => {
+  const navigate = useNavigate();
+  const HandleSignup = () => {
     navigate("/signup");
-    
-  }
-  return(
-<>
-
-<AuthLayout >
-<div className="left  flex flex-col  justify-between w-auto  h-[800px] lg:w-[600px] ">
+  };
+  return (
+    <div className="flex lg:flex-row md:flex-row overflow-auto  flex-col h-[1400px] w-auto   justify-between md:h-screen  sm:h-[1200px]   ">
+      <div className="left  flex flex-col  justify-between w-auto  h-[800px] lg:w-[600px] ">
         <div className=" h-[200px] flex flex-col justify-between">
           <div className="w-[143px] h-14 justify-center flex text-center font-[700] text-[24px] top-[22px]">
             <img
@@ -69,7 +63,7 @@ const Loginpage = () => {
             Login
           </button>
           <button
-            onClick={Handlesignup}
+            onClick={HandleSignup}
             className="border w-[350px] h-[40%] p-2 text-center  bg-[#3C82D6] text-white"
           >
             Signup
@@ -81,11 +75,29 @@ const Loginpage = () => {
           <h1 className="">About</h1>
         </div>
       </div>
-</AuthLayout>
 
-</>
+      <div className="right sm:flex  sm:justify-center h-[800px] sm:h-[500px]">
+        <div className="lg:relative lg:h-[800px] sm:flex sm:flex-col lg:w-full">
+          <img
+            className="lg:h-[800px] sm:h-[400px]    lg:w-[865px] lg:object-fill"
+            src="/assets/Group-680.png"
+          />
 
+          <div className="lg:absolute lg:h-[800px] inset-0 bg-black/20"></div>
+
+          <div className="lg:absolute lg:top-[670px] lg:right-16 text-center sm:text-black lg:text-white">
+            <h1 className="text-2xl font-bold">
+              Buy the best items on our site.
+            </h1>
+            <p className="mt-2  text-lg">
+              We have the best items on our site. You can buy the best items on
+              our site.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default Loginpage;
+export default Reuse;
