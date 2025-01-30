@@ -6,6 +6,7 @@ const Home = () => {
       <div className="card flex justify-content-center">
         <Button label="Submit" />
       </div>
+      
     </div>
   );
 };
